@@ -24,7 +24,7 @@ public class Task {
     @Column(length=1000)
     private String description;
     @ManyToOne
-    @JoinColumn(name="MEMBER_EMAIL")
+    @JoinColumn(name="MEMBER_ID")
     private Member member;
 
     public Long getId() {
